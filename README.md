@@ -11,21 +11,20 @@ To write a C Program to perform the basic left shift operation for 44 integer nu
 
 ## PROGRAM
 ```
-#include <stdio.h>
-int main() {
-    int num = 44;
-    int result;
-    result = num << 3;
-    printf("Original number: %d\n", num);
-    printf("After left shifting by 3 positions: %d\n", result);
-    return 0;
+
+#include<stdio.h>
+int main(){
+    int a=44;
+    a=a<<3;
+    printf("After Left Shift Operation value of a is:%d",a);
 }
 ```
 ## OUTPUT
 
 
 
-![437752557-464eec36-af64-4f0e-ae77-a1098561248c](https://github.com/user-attachments/assets/68d6259d-338b-459e-9e42-61d5d16947c6)
+![image](https://github.com/user-attachments/assets/0da8820f-1270-4cbb-a7e4-73078428c62a)
+
 
 
 
