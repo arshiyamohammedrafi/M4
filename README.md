@@ -142,30 +142,24 @@ Write a C Program to count the total number of words in a given string using do 
 
 ## PROGRAM
 ```
-#include <stdio.h>
-int main() {
-    char str[100];
-    int i = 0, wordCount = 0;
-    scanf("%[^\n]", str); 
-    do {
-        
-        if ((str[i] == ' ' || str[i] == '\n') && (str[i+1] != ' ' && str[i+1] != '\0' && str[i+1] != '\n')) {
-            wordCount++;
-        }
-        i++;
-    } while (str[i] != '\0');
-
-    if (str[0] != ' ' && str[0] != '\0' && str[0] != '\n') {
-        wordCount++;
+#include<stdio.h>
+int main()
+{
+    char a[100];
+    int l=0;
+    fgets(a,sizeof(a),stdin);
+    while(a[l]!='\0')
+    {
+        l++;
     }
-
-    printf("Total number of words: %d\n", wordCount);
+    printf("%d",l-1);
     return 0;
 }
 ```
 ## OUTPUT
 
-![437752800-4712065c-c430-4be1-a2ea-654e1e0833d7](https://github.com/user-attachments/assets/e7ea0106-ef39-4311-b4d9-56cff1c725fc)
+![image](https://github.com/user-attachments/assets/d531554c-824e-4daa-86d9-dd34cdc6fcf3)
+
 
 
 
